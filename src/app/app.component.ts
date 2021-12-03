@@ -9,8 +9,12 @@ import { AnalyticsService } from './analytics.service';
 export class AppComponent {
   title = 'Event-Tracking';
   constructor(public analytics:AnalyticsService){}
-  onClick(){
-    this.analytics.eventEmmiter("button_click");
 
+  onClickFavorite(){
+    this.analytics.eventEmmiter("click_favorite");
+  }
+  
+  onClickShare(){
+    this.analytics.eventEmmiter("click_share");
   }
 }

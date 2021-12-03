@@ -1,1 +1,23 @@
-<button (click)="onClick()">Click here</button>
+<mat-toolbar color="primary">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span style="margin: 5px;">Event Tracking Using Google Analytics</span>
+  <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon (click)="onClickFavorite()">favorite</mat-icon>
+    </button>
+  <div style="margin:50px">
+    <button mat-icon-button >
+      <mat-icon (click)="onClickShare()">share</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+<div style="margin:20px">
+  <p>
+    This is a demo web application to track different click events using Google Analytics. 
+  </p>
+  <p>
+    Clicking on Favorite/Share buttons logs the respective events.
+  </p>
+</div>
